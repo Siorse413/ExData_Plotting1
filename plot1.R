@@ -4,7 +4,7 @@ plot1 <- function () {
         elpower <- read.table("household_power_consumption.txt", header = TRUE, sep = ";")
         ## histogram
         elpower$Global_active_power <- as.numeric(as.character(elpower$Global_active_power))
-        ##elpower$Global_active_power <- (elpower$Global_active_power)/1000
+        
         elpower$Date <- as.Date(elpower$Date, "%d/%m/%Y")
         
         ##subset to requested time period!  
